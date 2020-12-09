@@ -1,10 +1,6 @@
-def boolean():
-    x = 5
-    y = 10
-    return x == y
+def boolean(a,b):
+    return a == b
 
-def addition():
-    a = 15
-    b = 20
+def addition(a,b):
     return a+b
 
