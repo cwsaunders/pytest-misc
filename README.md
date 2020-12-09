@@ -2,10 +2,10 @@
 Miscellaneous Pytest Code<br><br>
 
 Running:<br>
-1. pytest (FILENAME) (-v)<br>
-2. py.test<br>
-3. pytest (FILENAME::FUNCTION NAME)<br>
-4. pytest -v -k "(FUNCTION NAME AFTER TEST_)"<br>
+1. pytest (FILENAME) (-v)           --- Add -v for different information<br>
+2. py.test          --- Faster version of pytest (FILENAME) etc<br>
+3. pytest (FILENAME::FUNCTION NAME)             --- Only test specific function within file<br>
+4. pytest -v -k "(FUNCTION NAME AFTER TEST_)"           --- Only test specific test within function<br>
 
 <br>
 Convention Notes:<br>
