@@ -1,6 +1,6 @@
 import math_func
 
-def test_boolean():
+def test_boolean(): # test_ prefix required for tests
     assert math_func.boolean(5,5) == True
     assert math_func.boolean(5,4) == False
 
