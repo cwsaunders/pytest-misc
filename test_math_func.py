@@ -18,10 +18,15 @@ def test_addition():
 def test_addition_two():
     assert math_func.addition(4,1) == 5
     assert math_func.addition(6,6) == 12
-    assert math_func.addition(6,6) == 13
+    assert math_func.addition(6,6) == 12
 
 @pytest.mark.skipif(sys.version_info < (3,3), reason="Test Skip Option #2") # marker used to skip this test
 def test_addition_three():
     assert math_func.addition(4,1) == 5
     assert math_func.addition(6,6) == 12
-    assert math_func.addition(6,6) == 13
+    assert math_func.addition(6,6) == 12
+
+
+@pytest.mark.parametrize('a, b, result', [(7,3,10),("hello", " world", "hello world")]) # iterate through tuples within lists
+def test_parametrize_add(a,b,result):
+    assert math_func.addition(a,b) == result # iterate through multiple asserts using decorator
