@@ -2,8 +2,9 @@
 Miscellaneous Pytest Code<br><br>
 
 Running:<br>
-pytest (FILENAME) (-v)<br>
-py.test<br>
+1. pytest (FILENAME) (-v)<br>
+2. py.test<br>
+3. pytest (FILENAME::FUNCTION NAME)<br>
 
 <br>
 Convention Notes:<br>
