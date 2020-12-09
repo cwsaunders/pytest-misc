@@ -11,7 +11,8 @@ def test_boolean(): # test_ prefix required for tests
 def test_addition():
     assert math_func.addition(4,1) == 5
     assert math_func.addition(6,6) == 12
-    assert math_func.addition(6,6) == 13
+    assert math_func.addition(6,6) == 12
+    print(math_func.addition(7,3), '-------------------') # prints out with -s option
 
 @pytest.mark.skip(reason="Test Skip Option") # marker used to skip this test
 def test_addition_two():
