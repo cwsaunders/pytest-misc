@@ -10,6 +10,8 @@ Running:<br>
 6. pytest -v -x             # Exit test after failure<br>
 7. pytest -v --maxfail=(NUMBER)         # exit after specific number of failed tests<br>
 8. pytest -v -s             # use print statements designated within testing code<br>
+9. pytest -v -q             # Quiet mode. Only shows how many tests passed/failed<br>
+
 
 <br>
 Convention Notes:<br>
