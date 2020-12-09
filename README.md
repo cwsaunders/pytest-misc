@@ -9,6 +9,7 @@ Running:<br>
 5. pytest -v -m (MARKER NAME)           # Run tests that have marker decorators (i.g pytest.mark.number)<br>
 6. pytest -v -x             # Exit test after failure<br>
 7. pytest -v --maxfail=(NUMBER)         # exit after specific number of failed tests<br>
+8. pytest -v -s             # use print statements designated within testing code<br>
 
 <br>
 Convention Notes:<br>
