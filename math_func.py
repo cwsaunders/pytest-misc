@@ -1,9 +1,10 @@
-def test_method1():
+def boolean():
     x = 5
     y = 10
-    assert x == y
+    return x == y
 
-def test_method2():
+def addition():
     a = 15
     b = 20
-    assert a+5 == b
+    return a+b
+
