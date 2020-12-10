@@ -23,5 +23,8 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.divide(-1,1),-1)
         self.assertEqual(calc.divide(-1,-1),1)
 
+        with self.assertRaises(ValueError): # Test for divide by zero exception in calc.py
+            calc.divide(10,0)
+            
 if __name__ == '__main__': # set up code to run within unittest for easier execution
     unittest.main()
