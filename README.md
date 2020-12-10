@@ -20,3 +20,4 @@ Pytest Convention Notes:<br>
 
 Running unittest:<br>
 1. python -m unittest (FILENAME)<br>
+2. python (FILENAME) # Assuming the __name__ = __main__ unittest. etc etc etc
