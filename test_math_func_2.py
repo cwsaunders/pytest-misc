@@ -6,11 +6,9 @@ def db():
     print('------------Setup------------')
     db = StudentDB()
     db.connect('data.json')
-    return db
-
-# def teardown_module(module):
-#     print('------------Teardown------------')
-#     db.close()
+    yield db # yield instead of return so that the close() is executed at the end of the tests
+    print('------------Teardown------------')
+    db.close()
 
 def test_scott_data(db): # returned db argument from @pytest.fixture
     scott_data = db.get_data('Scott')
