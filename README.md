@@ -16,4 +16,7 @@ Running Pytest:<br>
 <br>
 Pytest Convention Notes:<br>
 1. test_ prefix required before tests within test file && test file name.<br>
-2.
+2.<br><br>
+
+Running unittest:<br>
+1. python -m unittest (FILENAME)<br>
