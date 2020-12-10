@@ -1,7 +1,7 @@
 from math_func import StudentDB
 import pytest
 
-@pytest.fixture(scope='module') # Only calls DB setup once, not at beginning of every test run
+@pytest.fixture(scope='module') # Scope only calls DB setup once, not at beginning of every test run
 def db():
     print('------------Setup------------')
     db = StudentDB()
