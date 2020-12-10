@@ -4,11 +4,13 @@ import pytest
 db=None
 
 def setup_module(module):
+    print('------------Setup------------')
     global db
     db = StudentDB()
     db.connect('data.json')
 
 def teardown_module(module):
+    print('------------Teardown------------')
     db.close()
 
 def test_scott_data():
