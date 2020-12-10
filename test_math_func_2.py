@@ -8,6 +8,9 @@ def setup_module(module):
     db = StudentDB()
     db.connect('data.json')
 
+def teardown_module(module):
+    db.close()
+
 def test_scott_data():
     scott_data = db.get_data('Scott')
     assert scott_data['id'] == 1
